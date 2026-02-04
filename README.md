@@ -4,8 +4,8 @@
 ### Text / Markdown → Jupyter Notebook Generator for DSA Practice (College + Interview)
 
 <p>
-  <a href="https://github.com/CraftedBySiddhesh/code-with-siddhesh/actions/workflows/ci.yml">
-    <img src="https://github.com/CraftedBySiddhesh/code-with-siddhesh/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
+  <a href="https://github.com/CraftedBySiddhesh/ai-dsa-code-explainer-agent/actions/workflows/ci.yml">
+    <img src="https://github.com/CraftedBySiddhesh/ai-dsa-code-explainer-agent/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
   </a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" />
   <img src="https://img.shields.io/badge/Streamlit-App-FF4B4B.svg" />
