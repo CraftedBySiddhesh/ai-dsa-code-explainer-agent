@@ -1,5 +1,6 @@
 import nbformat as nbf
 
+
 def build_notebook(sections):
     nb = nbf.v4.new_notebook()
     nb.cells.append(nbf.v4.new_markdown_cell("# Algorithm Notebook"))

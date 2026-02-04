@@ -1,9 +1,9 @@
-import streamlit as st
 import nbformat as nbf
+import streamlit as st
 from dotenv import load_dotenv
 
-from agent.md_parser import split_problems, ensure_single_problem
 from agent.agent_core import NotebookAgent
+from agent.md_parser import ensure_single_problem, split_problems
 from agent.notebook_builder import build_notebook
 
 load_dotenv()
@@ -22,8 +22,7 @@ md_text = None
 with tab_text:
     st.subheader("Paste one problem or multiple problems")
     st.write(
-        "For multiple problems, separate with `##` headings or `---` lines. "
-        "For a single problem, paste plain text."
+        "For multiple problems, separate with `##` headings or `---` lines. For a single problem, paste plain text."
     )
     text_in = st.text_area("Paste problem text here", height=320, placeholder="Paste your problem statement(s) here...")
     if text_in and text_in.strip():
