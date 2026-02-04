@@ -21,7 +21,10 @@ md_text = None
 
 with tab_text:
     st.subheader("Paste one problem or multiple problems")
-    st.write("For multiple problems, separate with `##` headings or `---` lines. For a single problem, paste plain text.")
+    st.write(
+        "For multiple problems, separate with `##` headings or `---` lines. "
+        "For a single problem, paste plain text."
+    )
     text_in = st.text_area("Paste problem text here", height=320, placeholder="Paste your problem statement(s) here...")
     if text_in and text_in.strip():
         md_text = ensure_single_problem(text_in)

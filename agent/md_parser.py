@@ -25,7 +25,7 @@ def ensure_single_problem(md: str) -> str:
     return md2
 
 def pick_title(problem_md: str) -> str:
-    lines = [l.strip() for l in problem_md.split("\n") if l.strip()]
+    lines = [line.strip() for line in problem_md.split("\n") if line.strip()]
     if not lines:
         return ""
     if lines[0].startswith("##"):
